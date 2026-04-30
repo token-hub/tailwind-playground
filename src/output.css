@@ -158,15 +158,9 @@
     display: none !important;
   }
 }
-@layer utilities {
-  .hidden {
-    display: none;
-  }
-  .md\:block {
-    @media (width >= 48rem) {
-      display: block;
-    }
-  }
+@layer utilities;
+.component {
+  background-color: black;
 }
 .typography {
   p {
