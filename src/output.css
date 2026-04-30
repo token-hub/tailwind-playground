@@ -167,6 +167,9 @@
   }
 }
 @layer utilities {
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -199,6 +202,11 @@
   .active\:bg-blue-800 {
     &:active {
       background-color: var(--color-blue-800);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:w-1\/2 {
