@@ -223,6 +223,12 @@
       background-color: var(--color-blue-700);
     }
   }
+  .before\:content-\[\'\*\'\] {
+    &::before {
+      --tw-content: '*';
+      content: var(--tw-content);
+    }
+  }
   .after\:text-red-600 {
     &::after {
       content: var(--tw-content);
