@@ -183,6 +183,12 @@
   .table {
     display: table;
   }
+  .max-h-\[calc\(100dvh-4rem\)\] {
+    max-height: calc(100dvh - 4rem);
+  }
+  .max-h-\[calc\(dvh-rem\)\] {
+    max-height: calc(dvh-rem);
+  }
   .border-collapse {
     border-collapse: collapse;
   }
