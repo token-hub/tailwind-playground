@@ -8,10 +8,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-sky-500: oklch(68.5% 0.169 237.323);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-indigo-700: oklch(45.7% 0.24 277.023);
     --color-pink-600: oklch(59.2% 0.249 0.584);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
@@ -180,6 +183,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
   .bg-indigo-500 {
     background-color: var(--color-indigo-500);
   }
@@ -195,6 +201,21 @@
   }
   .peer-checked\:bg-blue-700 {
     &:is(:where(.peer):checked ~ *) {
+      background-color: var(--color-blue-700);
+    }
+  }
+  .peer-checked\/darft\:bg-sky-500 {
+    &:is(:where(.peer\/darft):checked ~ *) {
+      background-color: var(--color-sky-500);
+    }
+  }
+  .peer-checked\/draft\:bg-sky-500 {
+    &:is(:where(.peer\/draft):checked ~ *) {
+      background-color: var(--color-sky-500);
+    }
+  }
+  .peer-checked\/published\:bg-blue-700 {
+    &:is(:where(.peer\/published):checked ~ *) {
       background-color: var(--color-blue-700);
     }
   }
@@ -240,6 +261,11 @@
   .nth-3\:bg-amber-700 {
     &:nth-child(3) {
       background-color: var(--color-amber-700);
+    }
+  }
+  .dark\:bg-gray-400 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-400);
     }
   }
 }
