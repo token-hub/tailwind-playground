@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-sky-500: oklch(68.5% 0.169 237.323);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -192,6 +193,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .text-red-600 {
+    color: var(--color-red-600);
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -217,6 +221,24 @@
   .peer-checked\/published\:bg-blue-700 {
     &:is(:where(.peer\/published):checked ~ *) {
       background-color: var(--color-blue-700);
+    }
+  }
+  .after\:text-red-600 {
+    &::after {
+      content: var(--tw-content);
+      color: var(--color-red-600);
+    }
+  }
+  .after\:content-\[\'\*\'\] {
+    &::after {
+      --tw-content: '*';
+      content: var(--tw-content);
+    }
+  }
+  .after\:content-\[\*\] {
+    &::after {
+      --tw-content: *;
+      content: var(--tw-content);
     }
   }
   .first\:pt-0 {
@@ -279,11 +301,17 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-outline-style: solid;
+      --tw-content: "";
     }
   }
 }
