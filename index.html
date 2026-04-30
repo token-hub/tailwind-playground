@@ -7,22 +7,27 @@
         <link rel="stylesheet" href="./src/output.css" />
     </head>
     <body class="tw:bg-blue-600 tw:dark:bg-gray-400">
-        <!-- adding the first and last on every child allows browser to determine which is the first and the last -->
-        <!-- <ul>
-            <li class="py-4 first:pt-0 last:pb-0">23</li>
-            <li class="py-4 first:pt-0 last:pb-0">23</li>
-            <li class="py-4 first:pt-0 last:pb-0">23</li>
-            <li class="py-4 first:pt-0 last:pb-0">23</li>
-            <li class="py-4 first:pt-0 last:pb-0">23</li>
-        </ul> -->
-
-        <!-- adding only first and last to the actual element works as it is actually intended -->
-        <ul>
-            <li class="py-4 first:pt-0">23</li>
-            <li class="py-4">23</li>
-            <li class="py-4">23</li>
-            <li class="py-4">23</li>
-            <li class="py-4 last:pb-0">23</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd:bg-gray-700">
+                    <td>Data1</td>
+                    <td>Data2</td>
+                </tr>
+                <tr class="odd:bg-gray-700">
+                    <td>Data1</td>
+                    <td>Data2</td>
+                </tr>
+                <tr class="odd:bg-gray-700">
+                    <td>Data1</td>
+                    <td>Data2</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
