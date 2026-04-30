@@ -171,6 +171,9 @@
   }
 }
 @layer utilities {
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
   }
@@ -289,6 +292,16 @@
   .nth-3\:bg-amber-700 {
     &:nth-child(3) {
       background-color: var(--color-amber-700);
+    }
+  }
+  .portrait\:flex-col {
+    @media (orientation: portrait) {
+      flex-direction: column;
+    }
+  }
+  .landscape\:flex-row {
+    @media (orientation: landscape) {
+      flex-direction: row;
     }
   }
   .dark\:bg-gray-400 {
