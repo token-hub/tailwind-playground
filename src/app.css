@@ -6,9 +6,4 @@
 
 @theme {
     --color-clifford: #da373d;
-    --text-base: 2rem;
-}
-
-.heading {
-    font-size: var(--text-base);
 }
