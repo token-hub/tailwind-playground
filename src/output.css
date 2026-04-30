@@ -1,5 +1,4 @@
 /*! tailwindcss v4.2.4 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -7,17 +6,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-amber-700: oklch(55.5% 0.163 48.998);
-    --color-sky-500: oklch(68.5% 0.169 237.323);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-blue-700: oklch(48.8% 0.243 264.376);
-    --color-indigo-500: oklch(58.5% 0.233 277.117);
-    --color-indigo-700: oklch(45.7% 0.24 277.023);
-    --color-pink-600: oklch(59.2% 0.249 0.584);
+    --color-red-700: oklch(50.5% 0.213 27.518);
     --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
-    --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -171,186 +161,14 @@
   }
 }
 @layer utilities {
-  .flex {
-    display: flex;
-  }
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
-  }
-  .bg-indigo-500 {
-    background-color: var(--color-indigo-500);
-  }
-  .py-4 {
-    padding-block: calc(var(--spacing) * 4);
-  }
-  .text-red-600 {
-    color: var(--color-red-600);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .peer-checked\:bg-blue-700 {
-    &:is(:where(.peer):checked ~ *) {
-      background-color: var(--color-blue-700);
-    }
-  }
-  .peer-checked\/darft\:bg-sky-500 {
-    &:is(:where(.peer\/darft):checked ~ *) {
-      background-color: var(--color-sky-500);
-    }
-  }
-  .peer-checked\/draft\:bg-sky-500 {
-    &:is(:where(.peer\/draft):checked ~ *) {
-      background-color: var(--color-sky-500);
-    }
-  }
-  .peer-checked\/published\:bg-blue-700 {
-    &:is(:where(.peer\/published):checked ~ *) {
-      background-color: var(--color-blue-700);
-    }
-  }
-  .before\:content-\[\'\*\'\] {
-    &::before {
-      --tw-content: '*';
-      content: var(--tw-content);
-    }
-  }
-  .after\:text-red-600 {
-    &::after {
-      content: var(--tw-content);
-      color: var(--color-red-600);
-    }
-  }
-  .after\:content-\[\'\*\'\] {
-    &::after {
-      --tw-content: '*';
-      content: var(--tw-content);
-    }
-  }
-  .after\:content-\[\*\] {
-    &::after {
-      --tw-content: *;
-      content: var(--tw-content);
-    }
-  }
-  .first\:pt-0 {
-    &:first-child {
-      padding-top: calc(var(--spacing) * 0);
-    }
-  }
-  .first\:pb-0 {
-    &:first-child {
-      padding-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .last\:pb-0 {
-    &:last-child {
-      padding-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .odd\:bg-gray-700 {
-    &:nth-child(odd) {
-      background-color: var(--color-gray-700);
-    }
-  }
-  .invalid\:bg-pink-600 {
-    &:invalid {
-      background-color: var(--color-pink-600);
-    }
-  }
-  .hover\:not-focus\:bg-indigo-700 {
-    &:hover {
-      @media (hover: hover) {
-        &:not(*:focus) {
-          background-color: var(--color-indigo-700);
-        }
-      }
-    }
-  }
-  .disabled\:opacity-50 {
-    &:disabled {
-      opacity: 50%;
-    }
-  }
-  .data-\[size\=\'small\'\]\:p-2 {
-    &[data-size='small'] {
-      padding: calc(var(--spacing) * 2);
-    }
-  }
-  .data-\[size\=\'small\'\]\:p-8 {
-    &[data-size='small'] {
-      padding: calc(var(--spacing) * 8);
-    }
-  }
-  .nth-3\:bg-amber-700 {
-    &:nth-child(3) {
-      background-color: var(--color-amber-700);
-    }
-  }
-  .portrait\:flex-col {
-    @media (orientation: portrait) {
-      flex-direction: column;
-    }
-  }
-  .landscape\:flex-row {
-    @media (orientation: landscape) {
-      flex-direction: row;
-    }
-  }
   .dark\:bg-gray-400 {
     &:where(.dark, .dark *) {
       background-color: var(--color-gray-400);
     }
   }
-  .\[data-size\=\'small\'\]\:p-2 {
-    &:is(data-size='small') {
-      padding: calc(var(--spacing) * 2);
-    }
-  }
-  .\[data-size\=\'small\'\]\:p-8 {
-    &:is(data-size='small') {
-      padding: calc(var(--spacing) * 8);
-    }
-  }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-content {
-  syntax: "*";
-  initial-value: "";
-  inherits: false;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
-      --tw-content: "";
+  .data-checked\:bg-red-700 {
+    &[data-ui~="checked"] {
+      background-color: var(--color-red-700);
     }
   }
 }
