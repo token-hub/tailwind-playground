@@ -212,6 +212,11 @@
       background-color: var(--color-pink-600);
     }
   }
+  .disabled\:opacity-50 {
+    &:disabled {
+      opacity: 50%;
+    }
+  }
   .nth-3\:bg-amber-700 {
     &:nth-child(3) {
       background-color: var(--color-amber-700);
