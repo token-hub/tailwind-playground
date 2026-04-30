@@ -199,6 +199,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\#316ff6\] {
+    background-color: #316ff6;
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -215,6 +218,9 @@
   }
   .text-clifford {
     color: var(--color-clifford);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
