@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-indigo-700: oklch(45.7% 0.24 277.023);
     --color-pink-600: oklch(59.2% 0.249 0.584);
@@ -191,6 +192,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .peer-checked\:bg-blue-700 {
+    &:is(:where(.peer):checked ~ *) {
+      background-color: var(--color-blue-700);
+    }
   }
   .first\:pt-0 {
     &:first-child {
