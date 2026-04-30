@@ -289,6 +289,16 @@
       opacity: 50%;
     }
   }
+  .data-\[size\=\'small\'\]\:p-2 {
+    &[data-size='small'] {
+      padding: calc(var(--spacing) * 2);
+    }
+  }
+  .data-\[size\=\'small\'\]\:p-8 {
+    &[data-size='small'] {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
   .nth-3\:bg-amber-700 {
     &:nth-child(3) {
       background-color: var(--color-amber-700);
@@ -307,6 +317,16 @@
   .dark\:bg-gray-400 {
     &:where(.dark, .dark *) {
       background-color: var(--color-gray-400);
+    }
+  }
+  .\[data-size\=\'small\'\]\:p-2 {
+    &:is(data-size='small') {
+      padding: calc(var(--spacing) * 2);
+    }
+  }
+  .\[data-size\=\'small\'\]\:p-8 {
+    &:is(data-size='small') {
+      padding: calc(var(--spacing) * 8);
     }
   }
 }
