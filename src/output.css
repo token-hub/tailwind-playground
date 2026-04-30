@@ -171,4 +171,9 @@
       background-color: var(--color-red-700);
     }
   }
+  .theme-midnight\:text-red-700 {
+    &:where([data-theme="midnight"] *) {
+      color: var(--color-red-700);
+    }
+  }
 }
