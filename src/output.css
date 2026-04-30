@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
@@ -203,6 +204,11 @@
   .odd\:bg-gray-700 {
     &:nth-child(odd) {
       background-color: var(--color-gray-700);
+    }
+  }
+  .nth-3\:bg-amber-700 {
+    &:nth-child(3) {
+      background-color: var(--color-amber-700);
     }
   }
 }
