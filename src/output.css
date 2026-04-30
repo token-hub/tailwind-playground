@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-pink-600: oklch(59.2% 0.249 0.584);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
@@ -204,6 +205,11 @@
   .odd\:bg-gray-700 {
     &:nth-child(odd) {
       background-color: var(--color-gray-700);
+    }
+  }
+  .invalid\:bg-pink-600 {
+    &:invalid {
+      background-color: var(--color-pink-600);
     }
   }
   .nth-3\:bg-amber-700 {
