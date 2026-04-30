@@ -7,3 +7,9 @@
 @theme {
     --color-clifford: #da373d;
 }
+
+.typography {
+    p {
+        color: gray;
+    }
+}
