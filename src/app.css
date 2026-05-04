@@ -16,6 +16,11 @@
     --font-sans: var(--font-inter);
 }
 
+@theme static {
+    --color-primary: var(--color-red-400);
+    --color-secondary: var(--color-red-500);
+}
+
 .typography {
     p {
         color: gray;
