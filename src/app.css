@@ -8,6 +8,16 @@
 
 @theme {
     --color-brand-500: var(--color-red-500);
+    --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+
+    @keyframes fade-in-scale {
+        from {
+            transform: scale(0.95);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
 }
 
 .typography {
