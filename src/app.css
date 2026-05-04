@@ -7,18 +7,7 @@
 @custom-variant theme-midnight (&:where([data-theme="midnight"] *));
 
 @theme {
-    /* --*: initial;
-    --spacing: 4px;
-    --font-body: Inter; */
-}
-
-@theme inline {
-    --font-sans: var(--font-inter);
-}
-
-@theme static {
-    --color-primary: var(--color-red-400);
-    --color-secondary: var(--color-red-500);
+    --color-brand-500: var(--color-red-500);
 }
 
 .typography {
@@ -43,5 +32,11 @@
         padding: 1rem;
         border: 1px solid red;
         border-radius: var(--radius-md);
+    }
+}
+
+@layer utilities {
+    .text-brand {
+        color: var(--color-brand-500);
     }
 }
