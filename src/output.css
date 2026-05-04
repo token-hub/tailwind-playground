@@ -3,15 +3,13 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-950: oklch(13% 0.028 261.692);
     --text-2xl: 1.5rem;
     --radius-xl: 0.75rem;
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --default-font-family: var(--font-sans);
+    --default-font-family: var(--font-inter);
     --default-mono-font-family: var(--font-mono);
   }
 }
@@ -180,9 +178,8 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-\[calc\(--radius-xl\)-1px\] {
-    border-style: var(--tw-border-style);
-    border-width: calc(--radius-xl)-1px;
+  .font-sans {
+    font-family: var(--font-inter);
   }
   .underline {
     text-decoration-line: underline;
