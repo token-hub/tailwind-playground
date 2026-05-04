@@ -7,10 +7,9 @@
 @custom-variant theme-midnight (&:where([data-theme="midnight"] *));
 
 @theme {
-    --color-*: initial;
-    --color-white: #ffffff;
-    --color-purple: #3f3cbb;
-    --color-midnight: #121063;
+    --*: initial;
+    --spacing: 4px;
+    --font-body: Inter;
 }
 
 .typography {
