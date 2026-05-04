@@ -7,13 +7,20 @@
 @custom-variant theme-midnight (&:where([data-theme="midnight"] *));
 
 @theme {
-    --*: initial;
+    /* --*: initial;
     --spacing: 4px;
-    --font-body: Inter;
+    --font-body: Inter; */
 }
 
 .typography {
     p {
         color: gray;
+    }
+}
+
+@layer components {
+    .card-title {
+        font-size: var(--text-2xl);
+        color: var(--color-gray-950);
     }
 }
