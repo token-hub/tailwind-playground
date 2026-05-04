@@ -12,6 +12,8 @@
     --color-brand: #3f3cbb;
     --text-mega: 6rem;
     --breakpoint-3xl: 120rem;
+    --color-red-500: #ff2d55;
+    --breakpoint-sm: 30rem;
 }
 
 .typography {
