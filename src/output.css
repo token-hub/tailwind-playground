@@ -9,8 +9,8 @@
       "Courier New", monospace;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-mint-500: oklch(0.72 0.11 178);
     --color-brand: #3f3cbb;
+    --text-mega: 6rem;
   }
 }
 @layer base {
@@ -175,11 +175,11 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .text-mega {
+    font-size: var(--text-mega);
+  }
   .text-brand {
     color: var(--color-brand);
-  }
-  .text-mint-500 {
-    color: var(--color-mint-500);
   }
   .underline {
     text-decoration-line: underline;
