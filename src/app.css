@@ -7,13 +7,10 @@
 @custom-variant theme-midnight (&:where([data-theme="midnight"] *));
 
 @theme {
-    --color-clifford: #da373d;
-    --color-mint-500: oklch(0.72 0.11 178);
-    --color-brand: #3f3cbb;
-    --text-mega: 6rem;
-    --breakpoint-3xl: 120rem;
-    --color-red-500: #ff2d55;
-    --breakpoint-sm: 30rem;
+    --color-*: initial;
+    --color-white: #ffffff;
+    --color-purple: #3f3cbb;
+    --color-midnight: #121063;
 }
 
 .typography {
