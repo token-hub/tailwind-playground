@@ -20,6 +20,23 @@
     }
 }
 
+@layer components {
+    .spinner {
+        animation: spin 1s ease-out infinite;
+    }
+}
+
+@layer base {
+    @keyframes spin {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
 .typography {
     p {
         color: gray;
