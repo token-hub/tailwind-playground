@@ -27,6 +27,12 @@
     }
 }
 
+@layer base {
+    h1 {
+        font-weight: bold;
+    }
+}
+
 @layer components {
     .card-title {
         font-size: var(--text-2xl);
