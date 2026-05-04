@@ -9,6 +9,7 @@
 @theme {
     --color-clifford: #da373d;
     --color-mint-500: oklch(0.72 0.11 178);
+    --color-brand: #3f3cbb;
 }
 
 .typography {
