@@ -1,81 +1,8 @@
 @import "tailwindcss";
 @import "./component.css";
 
-/* @custom-variant dark (&:where(.dark, .dark *)); */
-@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *))
-@custom-variant data-checked (&[data-ui~="checked"]);
-@custom-variant theme-midnight (&:where([data-theme="midnight"] *));
-
-@theme {
-    --color-brand-500: var(--color-red-500);
-    --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
-    --animate-slide-up: slide-up 0.3s ease-out;
-
-    @keyframes slide-up {
-        from {
-            transform: translateY(10px);
-            opacity: 0;
-        }
-        to {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    @keyframes fade-in-scale {
-        from {
-            transform: scale(0.95);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
-}
-
 @layer components {
-    .spinner {
-        animation: spin 1s ease-out infinite;
-    }
-}
-
-@layer base {
-    @keyframes spin {
-        from {
-            transform: rotate(0);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-.typography {
-    p {
-        color: gray;
-    }
-}
-
-@layer base {
-    h1 {
-        font-weight: bold;
-    }
-}
-
-@layer components {
-    .card-title {
-        font-size: var(--text-2xl);
-        color: var(--color-gray-950);
-    }
-
-    .card {
-        padding: 1rem;
-        border: 1px solid red;
-        border-radius: var(--radius-md);
-    }
-}
-
-@layer utilities {
-    .text-brand {
-        color: var(--color-brand-500);
+    .section {
+        padding: --spacing(6);
     }
 }
