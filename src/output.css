@@ -166,6 +166,12 @@
   .m-\(--space\) {
     margin: var(--space);
   }
+  .grid {
+    display: grid;
+  }
+  .grid-cols-\[1fr_500px_2fr\] {
+    grid-template-columns: 1fr 500px 2fr;
+  }
   .p-\(--space\) {
     padding: var(--space);
   }
@@ -175,6 +181,17 @@
   .lg\:\[--space\:8rem\] {
     @media (width >= 64rem) {
       --space: 8rem;
+    }
+  }
+  .lg\:\[\&\:nth-child\(-n\+3\)\]\:hover\:underline {
+    @media (width >= 64rem) {
+      &:nth-child(-n+3) {
+        &:hover {
+          @media (hover: hover) {
+            text-decoration-line: underline;
+          }
+        }
+      }
     }
   }
 }
