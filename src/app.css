@@ -20,3 +20,7 @@
 @utility content-auto {
     content-visibility: auto;
 }
+
+.something {
+    background-color: --alpha(var(--color-gray-950), 10%);
+}
