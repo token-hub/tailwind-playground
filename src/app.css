@@ -5,4 +5,7 @@
     .section {
         padding: --spacing(6);
     }
+    .card {
+        @apply shadow-lg rounded-xl p-6;
+    }
 }
