@@ -3,6 +3,8 @@
 
 @theme {
     --brand-color: red;
+    --lime-*: initial;
+    --fuchsia-*: initial;
 }
 
 @layer components {
