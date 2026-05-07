@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "./component.css";
 
+@theme {
+    --brand-color: red;
+}
+
 @layer components {
     .section {
         padding: --spacing(6);
@@ -21,6 +25,6 @@
     content-visibility: auto;
 }
 
-.something {
+/* .something {
     background-color: --alpha(var(--color-gray-950), 10%);
-}
+} */
