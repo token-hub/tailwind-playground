@@ -186,5 +186,8 @@
     border-radius: var(--radius-lg);
     padding: calc(var(--spacing) * 6);
     box-shadow: var(--shadow-xl);
+    @media (prefers-color-scheme: dark) {
+      background: red;
+    }
   }
 }

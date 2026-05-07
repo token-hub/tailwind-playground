@@ -10,6 +10,10 @@
         border-radius: var(--radius-lg);
         padding: --spacing(6);
         box-shadow: var(--shadow-xl);
+
+        @variant dark {
+            background: red;
+        }
     }
 }
 
