@@ -12,3 +12,7 @@
         box-shadow: var(--shadow-xl);
     }
 }
+
+@utility content-auto {
+    content-visibility: auto;
+}
