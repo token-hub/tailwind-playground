@@ -163,14 +163,18 @@
   }
 }
 @layer utilities {
-  .rounded-none {
-    border-radius: 0;
+  .m-\(--space\) {
+    margin: var(--space);
   }
-  .hover\:content-auto {
-    &:hover {
-      @media (hover: hover) {
-        content-visibility: auto;
-      }
+  .p-\(--space\) {
+    padding: var(--space);
+  }
+  .\[--space\:4rem\] {
+    --space: 4rem;
+  }
+  .lg\:\[--space\:8rem\] {
+    @media (width >= 64rem) {
+      --space: 8rem;
     }
   }
 }
