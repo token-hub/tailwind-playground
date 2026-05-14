@@ -5,6 +5,7 @@
     --brand-color: red;
     --lime-*: initial;
     --fuchsia-*: initial;
+    --my-col: 4;
 }
 
 @layer components {
