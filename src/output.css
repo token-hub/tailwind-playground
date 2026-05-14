@@ -201,6 +201,9 @@
   .grid-cols-\[32\] {
     grid-template-columns: 32;
   }
+  .gap-\[10vw\] {
+    gap: 10vw;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
