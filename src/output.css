@@ -177,17 +177,26 @@
   .col-\[16_\/_span_16\] {
     grid-column: 16 / span 16;
   }
+  .flex {
+    display: flex;
+  }
   .grid {
     display: grid;
   }
   .table {
     display: table;
   }
+  .flex-\[1_0_auto\] {
+    flex: 1 0 auto;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
+  }
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
   .grid-cols-\[32\] {
     grid-template-columns: 32;
