@@ -6,6 +6,10 @@
     --lime-*: initial;
     --fuchsia-*: initial;
     --my-col: 4;
+
+    --font-tiny: 0.625rem;
+    --text-tiny--line-height: 1.5rem;
+    --text-tiny--font-weight: 500;
 }
 
 @layer components {
