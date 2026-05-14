@@ -10,14 +10,14 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
-    --color-yellow-200: oklch(94.5% 0.129 101.54);
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-500: oklch(62.3% 0.214 259.815);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-950: oklch(13% 0.028 261.692);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-3xl: 48rem;
     --radius-lg: 0.5rem;
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     --default-font-family: var(--font-sans);
@@ -174,20 +174,14 @@
   }
 }
 @layer utilities {
-  .col-\[16_\/_span_16\] {
-    grid-column: 16 / span 16;
-  }
-  .flex {
-    display: flex;
-  }
-  .grid {
-    display: grid;
-  }
   .table {
     display: table;
   }
-  .flex-\[1_0_auto\] {
-    flex: 1 0 auto;
+  .w-3xl {
+    width: var(--container-3xl);
+  }
+  .w-fit {
+    width: fit-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -195,18 +189,18 @@
   .resize {
     resize: both;
   }
-  .grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-  .grid-cols-\[32\] {
-    grid-template-columns: 32;
-  }
-  .gap-\[10vw\] {
-    gap: 10vw;
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
+  }
+  .text-wrap {
+    text-wrap: wrap;
   }
   .text-\(--brand-color\) {
     color: var(--brand-color);
